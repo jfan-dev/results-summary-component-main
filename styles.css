@@ -32,7 +32,7 @@
     /* - Persian blue (circle): */
     --PERSIANBLUE: hsla(241, 72%, 46%, 0);
 
-    
+
     /* NEUTRAL */
     /* - White:  */
     --WHITE: hsl(0, 0%, 100%);
@@ -95,6 +95,14 @@ p.score {
     height: 460px;
     padding: 3vh;
     color: var(--DARKGRAYBLUE);
+}
+
+.atributes {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    color: var(--DARKGRAYBLUE);
+    gap: 16px;
 }
 
 h2 {
@@ -204,7 +212,7 @@ button {
 
 button:hover {
     background: linear-gradient(var(--L-SLATEBLUE), var(--L-ROYALBLUE));
-    cursor:pointer;
+    cursor: pointer;
 }
 
 @media screen and (min-width: 1080px) {
@@ -223,12 +231,35 @@ button:hover {
         box-shadow: 10px 10px 30px 1px hsla(241, 81%, 54%, 0.219);
         display: flex;
         height: 550px;
-        width: 800px;
+        width: 750px;
+    }
+
+    p.result {
+        font-size: 1.5em;
+    }
+
+    h1 {
+        font-size: 2em;
     }
 
     section.score {
         border-radius: 25px;
         height: 550px;
+        width: 450px;
+        justify-content: center;
+        gap: 35px;
+    }
+
+    .circle {
+        align-items: center;
+        background: linear-gradient(var(--VIOLETBLUE), var(--PERSIANBLUE));
+        border-radius: 105px;
+        display: flex;
+        flex-direction: column;
+        height: 210px;
+        justify-items: center;
+        padding: 50px;
+        width: 210px;
     }
 
     .summary {
@@ -238,8 +269,19 @@ button:hover {
         flex-flow: column;
         height: 550px;
         justify-content: space-between;
-        padding: 3vh;
-        width: 400px;
+        padding: 5vh;
+        width: 450px;
     }
 
+    p.score {
+        width: 250px;
+        text-align: center;
+    }
+
+    .atributes {
+        display: flex;
+        flex-flow: column;
+        justify-content: space-between;
+        gap: 15px;
+    }
 }
